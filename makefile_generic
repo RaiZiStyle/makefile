@@ -1,9 +1,10 @@
 CC=gcc
 CFLAGS=
-LDFLAGS=-lssl -lcrypto
+# LDFLAGS=-lssl -lcrypto
+LDFLAGS=
 SRCDIR=src
 OBJDIR=Obj
-EXEC=Friendly_encrypt.elf
+EXEC=
 SRC=$(wildcard $(SRCDIR)/*.c)
 OBJ=$(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SRC))
 
